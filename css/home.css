@@ -7,8 +7,8 @@
 }
 
 .product .product-left {
-  float: left;
-  width: 50%;
+  /* float: left; */
+  /* width: 50%; */
   margin-top: 1%;
 }
 .product .product-left .product-system {
@@ -62,8 +62,8 @@
 }
 
 .product .product-content {
-  float: left;
-  width: 50%;
+  /* float: left; */
+  /* width: 50%; */
 }
 .product .product-content img {
   box-shadow: 0 12px 26px rgba(0,0,0,.4);
@@ -72,4 +72,5 @@
   width: auto;
   border-radius: 1.5%;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
