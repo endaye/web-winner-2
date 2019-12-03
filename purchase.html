@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Winner Train BOT - Purchase</title>
+  <link rel="stylesheet" href="./css/main.css?v2">
+  <link rel="stylesheet" href="./css/payment.css?v2">
+  <link rel="icon" sizes="any" href="./assets/logo.jpg">
+</head>
+<body>
+  <!-- loading -->
+
+  <div class="background"></div>
+  <div id="contaier">
+    <!-- nav -->
+    <nav class="nav-content">
+      <img id="logo" src="./assets/logo.jpg" />
+      <ul class="nav">
+        <li><a href="./home.html">Home</a></li>
+        <li class="active"><a href="./purchase.html">Purchase</a></li>
+        <li><a href="./about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- payment -->
+    <section class="payment">
+      <div class="payment-title">
+        Purchase
+      </div>
+      <div class="payment-form">
+        <div class="left">
+          <input id="buyNum" type="text" placeholder="buy num" />
+          <div id="buyInfo">Pay Money: <span>0</span></div>
+          <div id="chain">Chain name: <span></span></div>
+        </div>
+        <div class="right">
+          <input id="buy-email" type="text" placeholder="email">
+          <div id="buy-btn" type="button">Buy</div>
+          <div id="transactionId" style="display: none;"></div>
+          <a id="goToPay" style="display: none;" href="" target="_blank">Click go to Pay</a>
+          <div id="qrcode" style="display: none;"></div>
+          <div id="addr" style="display: none;">
+            <div id="info"></div>
+            <div id="copy" type="button">Copy</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span style="color: #ffffff;">
+          <span>WARNING</span>: actual collection is less than <span id="warningPrice"></span>（exclude fee）will not get product  and NO REFUND
+        </span>
+      </div>
+    </section>
+
+    <!-- search -->
+    <section class="search">
+      <div class="background"></div>
+      <div class="search-title">
+        Extract the key
+      </div>
+      <div class="search-form">
+        <input id="searchId" type="text" placeholder="transaction id" />
+        <div id="search-btn"><span>Go</span></div>
+      </div>
+      <!-- list -->
+      <div class="key-list" style="display: none;">
+        <ul></ul>
+      </div>
+    </section>
+
+    <section style="line-height: 100px;">&nbsp;</section>
+  </div>
+
+  <!-- alert mask -->
+  <div class="alert-mask" style="display: none;"></div>
+
+  <!-- alert loading -->
+  <div class="alert-loading" style="display: none;">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- alert -->
+  <div class="alert" style="display: none;">
+    <div class="title">Message</div>
+    <div class="desc"></div>
+    <div class="close">Close</div>
+  </div>
+
+  <div style="clear: both;"></div>
+
+  <br/>
+  <br/>
+  <br/>
+
+  <!-- footer -->
+  <section class="footer">
+      <hr style="color: white; width: 80%;"/>
+          <br/>
+          <p>
+              <span style="float: left;margin-left: 10%;">
+              Winner Train. Copyright © <span class="currentYear">----</span> All rights reserved
+              </span>
+              <style>
+                  .legal {
+                      float: left;
+                      margin-right: 15px;
+                  }
+              </style>
+
+          <div style="float:right;width: 35%;margin-right: 10%">
+              <a class="legal" href="/privacy-policy.html">Privacy Policy</a>
+              <a class="legal" href="/refund-policy.html">Refund Policy</a>
+              <a class="legal" href="/terms-of-service.html">Terms of Service</a>
+              <br/>
+              <span class="legal">Contact Us: support@snkrcc.com</span>
+          </div>
+          </p>
+          <br/>
+          <br/>
+
+
+      </section>
+      <br/>
+      <br/>
+</body>
+</html>
+<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="./js/main.js?v2"></script>
+<script type="text/javascript" src="./js/qrcode.min.js"></script>
+<script type="text/javascript" src="./js/clipboard.min.js"></script>
+<script type="text/javascript" src="./js/payment.js?v3"></script>
+<script>
+$('.currentYear').html(new Date().getFullYear());
+</script>

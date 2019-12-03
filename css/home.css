@@ -1,0 +1,75 @@
+.product {
+  margin-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.product .product-left {
+  float: left;
+  width: 50%;
+  margin-top: 1%;
+}
+.product .product-left .product-system {
+  margin-top: 40px;
+  padding-left: 50%;
+  margin-left: -153px;
+  height: 110px;
+}
+.product .product-left .product-system .win, .product .product-left .product-system .mac {
+  float: left;
+  margin-right: 30px;
+}
+.product .product-left .icon {
+  float: left;
+  margin-right: 10px;
+}
+.product .product-left .icon svg {
+  width: 44px;
+  height: 44px;
+}
+.product .product-left .text {
+  float: left;
+  height: 32px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 13px;
+}
+.product .product-title {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.product .product-desc {
+  margin-top: 30px;
+  width: 90%;
+  font-size: 20px;
+  color: rgba(255,255,255,.65);
+}
+.product .payment-btn-container {
+  text-align: center;
+}
+.product .payment-btn-container .payment-btn {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+  border-radius: 600px;
+  background-color: #42d97c;
+  color: #fff;
+  font-weight: 500;
+}
+
+.product .product-content {
+  float: left;
+  width: 50%;
+}
+.product .product-content img {
+  box-shadow: 0 12px 26px rgba(0,0,0,.4);
+  max-width: 96%;
+  max-height: 750px;
+  width: auto;
+  border-radius: 1.5%;
+  margin-bottom: 40px;
+}
